@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% for post in site.categories.log limit:3 %}
+<div class="timeline-card">
+  <div class="card-title">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.subtitle }}</p>
+  </div>
+  <div class="card-body">
+    <div class="desc">
+      Today's Progress
+    </div>
+    <div>{{ post.progress | truncate: 136 }}</div>
+    <div class="desc">Thoughts</div>
+    <div>{{ post.thoughts | truncate: 136 }}</div>
+  </div>
+
+  <div class="card-bottom">
+    <div>
+      <a href="{{post.link}}" target="_blank">
+        <i class="fas fa-link"></i> 
+        LINK TO WORK
+      </a>
+    </div>
+    <div>
+      <a href="{{post.url}}">
+        <i class="fas fa-angle-double-right"></i> 
+        READ MORE
+      </a>
+    </div>
+    <div> <i class="far fa-clock"></i> {{post.date | date: "%B %-d, %Y" | upcase }}</div>  
+  </div>
+</div>
+<hr class="vertical-line">
+
+{% endfor %}

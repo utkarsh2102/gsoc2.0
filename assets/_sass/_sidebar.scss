@@ -1,0 +1,84 @@
+.sidebar {
+  grid-area: sidebar;
+  color: white;
+  background: $dark-background;
+  padding-bottom: 100%;
+
+  .fab, .far, .fas {
+    padding-right: .5rem;
+  }
+
+  a {
+    color: white;
+  }
+
+  .avatar {
+    padding: 2.5rem 3rem;
+    background: $secondary-color;
+  }
+
+  .social {
+    background: $primary-color;
+    padding: 1.5rem 3rem 1rem;
+    .fab, .far, .fas{
+      &:hover {
+        color: $secondary-color;
+        transition: color 85ms ease-in;
+      }
+    }
+  }
+
+  .menu {
+    padding: 2rem 3rem;
+    background-color: $lighter-background;
+
+    .far, .fas {
+      color: $primary-color;
+    }
+
+    a:hover {
+      background-color: $primary-color;
+      .far, .fas {
+        color: white;
+      }
+    }
+  }
+}
+
+.right-sidebar {
+  grid-area: sidebar2;
+  margin-top: 2rem;
+  @include desktop {
+    margin-right: 1rem;
+  }
+
+  .sidebar-title {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .sidebar-section {
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    text-align: center;
+  }
+  .tag {
+    background-color: $primary-color;
+  }
+  
+  .posts {
+    a {
+      color: $dark-background;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .fas {
+      color: $primary-color;
+    }
+  }
+}

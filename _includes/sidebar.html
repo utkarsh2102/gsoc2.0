@@ -1,0 +1,61 @@
+<div class="sidebar is-hidden-mobile">
+  <div class="avatar">
+    <a href="{{site.url}}">
+      <img class="is-round" src="{{site.url}}/assets/images/{{site.avatar}}" alt="{{site.author}}">
+    </a>
+    <h1 class="large center-author">{{ site.author }}</h1>
+  </div>
+  <div class="social">
+    {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
+        <i class="fab fa-2x fa-github"></i>
+      </a>
+    {% endif %}
+    {% if site.twitter_username %}
+    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+      <i class="fab fa-2x fa-twitter-square"></i>
+    </a>
+    {% endif %}
+    {% if site.linkedin_username %}
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+      <i class="fab fa-2x fa-linkedin"></i>
+    </a>
+    {% endif %}
+    {% if site.site_username %}
+    <a href="https://utkarsh2102.com/" target="_blank">
+      <i class="fas fa-2x fa-yin-yang"></i>
+    </a>
+    {% endif %}
+  </div>
+  <aside class="menu">
+    <ul class="menu-list">
+      <li>
+        <a href="{{site.url}}">
+            <i class="fas fa-home"></i> HOME
+        </a>
+      </li>
+      <li>
+        <a href="{{site.url}}/timeline.html">
+            <i class="far fa-calendar-alt"></i> TIMELINE
+        </a>
+      </li>
+      <li>
+        <a href="https://utkarsh2102.com/posts/">
+            <i class="far fa-file-alt"></i> BLOG
+        </a>
+      </li>
+<!--
+      <li>
+        <a href="{{site.url}}/projects.html">
+            <i class="far fa-clipboard"></i> PROJECTS
+        </a>
+      </li>
+-->
+      <li>
+        <a href="{{site.url}}/books.html">
+            <i class="fas fa-book"></i> BOOKS
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

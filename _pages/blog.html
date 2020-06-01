@@ -1,0 +1,31 @@
+---
+layout: default
+title: Blog
+permalink: /blog
+---
+
+<div class="project-list">
+    {% for post in site.posts %}
+      {% if post.categories contains "blog" %}
+          <div class="card">
+            <a href="{{post.url}}">
+              <div class="card-image">
+                {% if post.image %}
+                  <img src="{{post.image}}" alt="{{post.title}}">
+                {% else %}
+                  <img src="{{site.url}}/assets/images/jason-leung-705076-unsplash.jpg">
+                {% endif %}
+              </div>
+              <div class="project-header">
+                  <h2>{{post.title}}</h2>
+              </div>
+            </a>
+              <div class="card-content">
+                <div class="contents">
+                  {{ post.excerpt | truncate: 136 }}
+                </div>
+              </div>
+            </div>
+      {% endif %}
+    {% endfor %}
+</div>
