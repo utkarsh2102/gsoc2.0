@@ -3,19 +3,19 @@
     command = "bundle exec jekyll build"
 
 [[redirects]]
-  from = "https://utkarsh2102-gsoc2.netlify.com/*"
-  to = "https://utkarsh2102-gsoc2.netlify.com/:splat"
+  from = "https://gsocwithutkarsh2102.netlify.com/*"
+  to = "https://gsocwithutkarsh2102.netlify.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://utkarsh2102-gsoc2.netlify.com/*"
-  to = "https://utkarsh2102-gsoc2.netlify.com/:splat"
+  from = "https://www.gsocwithutkarsh2102.netlify.com.com/*"
+  to = "https://gsocwithutkarsh2102.netlify.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://utkarsh2102-gsoc2.netlify.com/*"
-  to = "https://utkarsh2102-gsoc2.netlify.com/:splat"
+  from = "https://gsocwithutkarsh2102.netlify.com/*"
+  to = "https://gsocwithutkarsh2102.com/:splat"
   status = 301
   force = true
